@@ -1,0 +1,20 @@
+/* Main */
+.main{
+   display: flex;
+   margin: 0 15px;
+
+   &__col{
+      width: 50%;
+      padding: 0 15px;
+   }
+
+   .article--column .article__item{
+      max-width: none;
+      margin-bottom: 45px;
+   }
+}
+
+.request-form--right{
+   margin-left: auto;
+}
+

@@ -1,0 +1,60 @@
+/* Team */
+.team{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -15px;
+
+   &__col{
+      padding: 0 15px;
+      width: 33.33333%;
+      margin-bottom: 30px;
+   }
+
+   &__photo{
+      box-shadow: 10px 5px 13px rgba(0, 0, 0, .16);
+      margin-bottom: 13px;
+   }
+
+   &__name{
+      font-family: 'Lato', sans-serif;
+      color: #2c2c2c;
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 5px;
+      line-height: 1.2;
+   }
+
+   &__prof{
+      font-size: 16px;
+      color: #585858;
+      margin-bottom: 11px;
+   }
+
+   &__contacts{
+      font-size: 14px;
+      color: #585858;
+      line-height: 1.2;
+
+      & li{
+         margin-bottom: 9px;
+      }
+
+      & a{
+         color: inherit;
+         text-decoration: none;
+
+         &:hover{
+            text-decoration: underline;
+         }
+
+      }
+
+      &-icon{
+         width: 16px;
+         margin-right: 7px;
+         height: auto;
+      }
+
+   }  
+
+}

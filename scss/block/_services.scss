@@ -1,0 +1,78 @@
+/* Services */
+
+.services{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 30px 0 50px; 
+   background: #fff;
+   border-radius: 5px;
+   box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+   position: relative;
+
+   &__main-title{
+      position: absolute;
+      bottom: 12px;
+      right: 30px;
+      font-size: 90px;
+      font-family: 'Lato', sans-serif;
+      color: rgba(44, 44, 44, .15);
+      line-height: 1;
+      z-index: 1;
+      pointer-events: none;
+   }
+
+   &__item{
+      width: 25%;
+      padding: 0 25px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title{
+      font-family: 'Lato', sans-serif;
+      font-size: 24px;
+      color: #2c2c2c;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 20px;
+   }
+
+   &__text{
+      color: #585858;
+      line-height: 1.4;
+      font-size: 16px;
+      margin-bottom: 20px;
+   }
+
+   &__footer{
+      margin-top: auto;
+   }
+
+   &__link{
+      color: #004AF2;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+
+      &:hover{
+         color: #ff3e2f;
+
+         &::after{
+            width: 100%;
+            background-color: #ff3e2f;
+         }
+      }
+
+      &::after{
+         content: "";
+         display: block;
+         width: 10px;
+         height: 2px;
+         background-color: #004af2;
+         transition: width .3s linear;
+         margin-top: 5px;
+      }
+   }
+   
+}

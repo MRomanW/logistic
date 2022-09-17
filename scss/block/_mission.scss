@@ -1,0 +1,57 @@
+/* Mission */
+.mission{
+   padding: 60px 30px;
+   background-color: #fff;
+   box-shadow: 0 5px 30px rgba(0, 0, 0, .16);
+   margin-bottom: 30px;
+   border-radius: 5px;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   position: relative;
+   margin-top: -23px;
+
+   &::before,
+   &::after{
+      content: "";
+      display: block;
+      width: 41.66666%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+   }
+
+   &::before{
+      background-color: #004af2;
+      right: 50%;
+   }
+
+   &::after{
+      background-color: #fc2c2b;
+      left: 50%;
+   }
+
+   &-title{
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 90px;
+      line-height: 1;
+      color: rgba(0, 0, 0, .05);
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   &__title{
+      font-size: 30px;
+      font-weight: 700;
+      color: #004af2;
+      line-height: 1.2;
+      margin-bottom: 5px;
+   }
+
+   &__subtitle{
+      font-size: 21px;
+      color: #585858;
+      font-weight: 400;
+   }
+
+}

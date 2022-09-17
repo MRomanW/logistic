@@ -1,0 +1,68 @@
+.form__group{
+   margin-bottom: 25px;
+}
+
+.input{
+   display: block;
+   width: 100%;
+   background: none;
+   border: 0;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+   font-family: 'PT Sans', sans-serif;
+   font-size: 16px;
+   color: #fff; 
+   padding-bottom: 12px;
+   transition: border-color .1s linear;
+   padding-left: 50px;
+   border-radius: 0;
+   appearance: none;
+   box-shadow: none;
+
+   &::placeholder{
+      color: #fff;
+   }
+
+   &:focus{
+      outline: none;
+      border-bottom-color: #fff;
+   }
+
+   &--user{
+      background: url("../images/user-icon.svg") left 20px top 3px no-repeat;
+   }
+
+   &--phone{
+      background: url("../images/phone-icon.svg") left 20px top 5px no-repeat;
+   }
+
+   &--email{
+      background: url("../images/mail-icon.svg") left 20px top 6px no-repeat;
+   }
+
+   &--dark{
+      border-bottom-color: #e8e8e8;
+      color: #2c2c2c;
+
+      &::placeholder{
+         color: #2c2c2c;
+      }
+
+      &:focus{
+         border-bottom-color: #000;
+      }
+
+      &.input--user{
+         background: url("../images/user-black-icon.svg") left 20px top 3px no-repeat;
+      } 
+
+      &.input--email{
+         background: url("../images/mail-black-icon.svg") left 20px top 6px no-repeat;
+      }
+
+      &.input--phone{
+         background: url("../images/phone-black-icon.svg") left 20px top 5px no-repeat;
+      }
+   }
+
+}
+

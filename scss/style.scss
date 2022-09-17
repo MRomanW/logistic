@@ -1,0 +1,27 @@
+@import "fonts";
+@import "normalize";
+@import "libs";
+@import "vars";
+@import "mixins";
+
+// Libs
+@import "../libs/slick/slick";
+@import "../libs/aos/aos";
+
+// Block
+@import "block/header";
+@import "block/intro";
+@import "block/form";
+@import "block/services";
+@import "block/clients";
+@import "block/benefits";
+@import "block/team";
+@import "block/mission";
+@import "block/news";
+@import "block/footer";
+@import "block/modal";
+@import "block/main";
+@import "block/text";
+
+
+@import "media";

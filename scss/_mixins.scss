@@ -1,0 +1,136 @@
+body {
+   font-family: 'PT Sans', sans-serif;
+   font-size: 16px;
+   color: #585858;
+   line-height: 1.4;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+body.no-scroll,
+body.show-nav{
+   overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+.container {
+   width: 100%;
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6{
+   margin: 0;
+}
+
+p{
+   margin: 0 0 10px;
+}
+
+ul, ol{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.btn{
+   display: inline-block;
+   vertical-align: top;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 18px;
+   color: #fff;
+   text-align: center;
+   font-weight: 700;
+   padding: 15px 20px;
+   background: #333;
+   border: none;
+   cursor: pointer;
+   line-height: 1.1;
+   border-radius: 5px;
+   text-decoration: none;
+   vertical-align: middle;
+   position: relative;
+   overflow: hidden;
+   
+   &::before{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100px;
+      background: #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity .2s linear;
+   }
+
+   &:hover::before{
+      opacity: .15;
+   }
+
+   & span{
+      position: relative;
+      z-index: 2;
+   }
+
+   &--orange{
+      background-image: linear-gradient(to right, #ff903e, #ff2c2c);
+   }
+
+   &--block{
+      display: block;
+      width: 100%;
+   }
+
+   &--shadow{
+      box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+   }
+
+}
+
+/* Section */
+.section{
+   padding: 60px 0;
+
+   &--gray{
+      background: #f9f9f9;
+   }
+
+   &__title{
+      font-size: 45px;
+      color: #2c2c2c;
+      font-weight: 900;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.2;
+      margin-bottom: 40px;
+
+      span{
+         color: #0d53f2;
+      }
+   }
+}
+
+.img{
+   max-width: 100%;
+   display: block;
+   height: auto;
+}
+
+.text-center{
+   text-align: center;
+}
+
+.page{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   overflow: hidden;
+}
